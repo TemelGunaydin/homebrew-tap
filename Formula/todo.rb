@@ -16,4 +16,3 @@ class Todo < Formula
     bin.install ".build/release/todo_terminal" => "todo"
   end
 end
-end
