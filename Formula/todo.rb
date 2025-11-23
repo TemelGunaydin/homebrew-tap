@@ -2,8 +2,8 @@
 class Todo < Formula
   desc "Small terminal todo app written in Swift"
   homepage "https://github.com/TemelGunaydin/terminal-todos"
-  url "https://github.com/TemelGunaydin/terminal-todos/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "63b35051a662b849043f39c71f0a2fea346bba2aebbd5f770d5ea4f6a0883aea"
+  url "https://github.com/TemelGunaydin/terminal-todos/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "491a8a7532c2a75525dd46b84aa588b84c583150e8c2f3583d60bf65c0571d6d"
   license "MIT"
 
   depends_on :macos
