@@ -9,7 +9,11 @@ class Todo < Formula
   depends_on :macos
 
   def install
-    system "swift", "build", "-c", "release"
+    # SwiftPM'in kendi sandbox'ını kapatıyoruz, yoksa Homebrew sandbox'ı ile çakışıyor
+    system "swift", "build", "-c", "release", "--disable-sandbox"
+
+    # Buradaki binary adını kendi projenin .build/release içindeki isme göre ayarla
     bin.install ".build/release/todo_terminal" => "todo"
   end
+end
 end
